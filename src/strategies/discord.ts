@@ -15,6 +15,9 @@ passport.use(
       refreshToken: string,
       profile: Profile,
       done: VerifyCallback
-    ) => {}
+    ) => {
+      console.log(accessToken, refreshToken);
+      console.log(profile);
+    }
   )
 );
